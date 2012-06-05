@@ -1,6 +1,6 @@
 Coderepo 
 =====================================
-Coderepo is a code snippet gallery. It has 2 part, a server side and a cient side section. Server hosts all the snippets [HTML, CSS and javascript]. Client side is a dreamweaver extension to easily integrating with DW IDE.  
+Coderepo is a code snippet gallery. It consists of two parts, a server side and a cient side section. Server hosts all the snippets [HTML, CSS and javascript]. Client side is a dreamweaver extension to easily integrating with DW IDE. 
 
 Benefits
 --------
