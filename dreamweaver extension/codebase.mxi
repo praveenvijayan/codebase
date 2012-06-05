@@ -1,0 +1,59 @@
+<macromedia-extension
+	 name="Codebase"
+	 version="0.1.5"
+	 type="Object"
+	 requires-restart="true"
+	 locked="false"
+	 pkgtype="mxp">
+
+	<author name="Praveen vijayan (http://www.decodize.com/)" />
+
+	<products>
+		<product name="Dreamweaver" version="10" primary="true" />
+	</products>
+
+	<update  />
+
+	<description>
+	<![CDATA[
+	 <h3>Codebase <small>v 0.1.5</small></h3>
+	 Dreamweaver extension to load code snippets from codebase.<br>
+	 Ctrl+Alt+, Expand Abbreviation<br>
+	 Add server path in command>codebase>Codebase settings<br>
+	 eg:http://server.example.com/getCode.php<br>
+	]]>
+	</description>
+
+	<ui-access>
+	<![CDATA[
+	Access from command codebase
+	]]>
+	</ui-access>
+
+	<license-agreement>
+	</license-agreement>
+
+	<files>
+		<file source="Commands/Codebase.html" destination="$Dreamweaver/configuration/Commands" file-type="ordinary" />
+		<file source="Commands/Codebase_multiple.html" destination="$Dreamweaver/configuration/Commands" file-type="ordinary" />
+		<file source="Commands/CodebaseSettings.html" destination="$Dreamweaver/configuration/Commands" file-type="ordinary" />
+		<file source="Commands/Codebase/Codebase.js" destination="$Dreamweaver/configuration/Commands/Codebase" file-type="ordinary" />
+		<file source="Commands/Codebase/Codebase_multiple.js" destination="$Dreamweaver/configuration/Commands/Codebase" file-type="ordinary" />
+		<file source="Commands/Codebase/Codebase_settings.js" destination="$Dreamweaver/configuration/Commands/Codebase" file-type="ordinary" />
+		<file source="Commands/Codebase/json2.js" destination="$Dreamweaver/configuration/Commands/Codebase" file-type="ordinary" />
+	</files>
+
+	<configuration-changes>
+		<menu-insert appendTo="DWMenu_Commands">
+			<separator references="standard" />
+			<menu id="DWMenu_Codebase" name="_Codebase">
+				<menuitem id="Codebase" name="_Codebase" key="Cmd+Alt+," enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/Codebase.html" />
+				<menuitem id="CodebaseSetting" name="_Codebase Setting" key="Cmd+Alt+}" enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/CodebaseSettings.html" />
+			</menu>
+		</menu-insert>
+	</configuration-changes>
+	<signatures />
+
+</macromedia-extension>
+
+

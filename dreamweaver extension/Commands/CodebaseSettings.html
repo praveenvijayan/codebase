@@ -1,0 +1,49 @@
+<!-- MENU-LOCATION=NONE -->
+<html xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
+<head>
+<title>Codebase</title>
+<style type="text/css">
+#msgText {
+	display: none;
+}
+
+#widgetPanel td {
+	padding-top: 4px;
+	white-space: nowrap;
+}
+
+#txtServerPath{
+	width:250px;
+	padding:5px 10px;
+	font-size:14px;
+}
+p{
+	margin:0;
+	padding:0;
+	font-size:12px;	
+}
+label{
+	float:left;
+	width:100px;	
+}
+</style>
+<script language="javascript" src="../Shared/MM/Scripts/CMN/displayHelp.js"></script>
+<script type="text/javascript" src="../Shared/Common/Scripts/ListControlClass.js"></script>
+<script type="text/javascript" src="../Shared/Common/Scripts/dwscripts.js"></script>
+<script type="text/javascript" src="Codebase/json2.js"></script>
+<script type="text/javascript" src="Codebase/Codebase_settings.js"></script>
+</head>
+<body onLoad="initUI();">
+<form>
+<div id="serverPath">
+	<p>Add your code snippet server path here.</p>
+    <table border="0">
+      <tr>
+        <td><label for="serverPath">Server path</label></td>
+        <td><input type="text" id="txtServerPath"></td>
+      </tr>
+    </table>
+</div>
+</form>
+</body>
+</html>
