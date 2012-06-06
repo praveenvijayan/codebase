@@ -4,9 +4,19 @@ Coderepo is a code snippet gallery. It consists of two parts, a server side and 
 
 Benefits
 --------
-* Multiple developers can use code from a single database.
-* Easy integration with IDE (DW).
-* All code should be in server.
+1. Easier for debugging.
+2. All developer uses same code.
+3. Interoperability.
+4. Uses same markup in all projects.
+5. Code standardization.
+6. Better code sharing.
+7. Code updation & maintenance. 
+8. No more googling for an implemented solution.
+9. Better control on code usage.
+10. Helps parallel integration.
+11. Avoid coding inconsistency.
+12. All have normalized understanding of code.
+13. Better integration with DW IDE.
 
 
 How to use
