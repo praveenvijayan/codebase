@@ -23,7 +23,7 @@ Benefits
 
 How to use
 ----------
-![http://www.decodize.com/css/codebase-sexy-manage-code-snippets/](http://decodize.com/demos/codebase/codebase-youtube.jpg)
+<iframe width="640" height="480" src="http://www.youtube.com/embed/smJaNqtsONA" frameborder="0" allowfullscreen></iframe>
 
 * Setup server.
 * Add snippet on server.
@@ -48,7 +48,7 @@ for javascript snippets.
 Resources 
 ---------
 
-http://www.decodize.com/
+http://www.decodize.com/css/codebase-sexy-manage-code-snippets/
 
 http://codebase.decodize.com/
 
