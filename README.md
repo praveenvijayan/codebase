@@ -27,4 +27,4 @@ for javascript snippets.
 Resources 
 ---------
 
-[http://www.decodize.com/][decodize.com]
+http://www.decodize.com/
