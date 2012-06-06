@@ -44,12 +44,16 @@
 	</files>
 
 	<configuration-changes>
-		<menu-insert appendTo="DWMenu_Commands">
-			<separator references="standard" />
+		<menu-insert prependTo="DWMenu_Commands">
 			<menu id="DWMenu_Codebase" name="_Codebase">
-				<menuitem id="Codebase" name="_Codebase" key="Cmd+Alt+," enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/Codebase.html" />
-				<menuitem id="CodebaseSetting" name="_Codebase Setting" key="Cmd+Alt+}" enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/CodebaseSettings.html" />
 			</menu>
+		</menu-insert>
+		<menu-insert insertAfter="DWMenu_Codebase">
+			<separator id="DWMenu_Codebase_separator" />
+		</menu-insert>
+		<menu-insert appendTo="DWMenu_Codebase">
+			<menuitem id="Codebase" name="_Codebase" key="Cmd+Alt+," enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/Codebase.html" />
+			<menuitem id="CodebaseSetting" name="_Codebase Setting" key="Cmd+Alt+}" enabled="dw.getFocus(true) === 'textView' || dw.getFocus(true) === 'html'" command="dw.runCommand()" file="Commands/CodebaseSettings.html" />
 		</menu-insert>
 	</configuration-changes>
 	<signatures />
