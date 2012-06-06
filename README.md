@@ -2,6 +2,8 @@ Coderepo
 =====================================
 Coderepo is a code snippet gallery. It consists of two parts, a server side and a cient side section. Server hosts all the snippets [HTML, CSS and javascript]. Client side is a dreamweaver extension to easily integrating with DW IDE. 
 
+![Codebase](http://decodize.com/demos/codebase/codebase.jpg)
+
 Benefits
 --------
 1. Easier for debugging.
@@ -21,6 +23,9 @@ Benefits
 
 How to use
 ----------
+![Codebase](http://decodize.com/demos/codebase/dw-ext.jpg)
+
+* Setup server.
 * Add snippet on server.
 * Download dreamweaver extension and install.
 * Add server path [command > codebase > codebase settings]
@@ -33,6 +38,10 @@ for css snippets.
 
 ```j:snippet or js:snippet```
 for javascript snippets.
+
+![Codebase](http://decodize.com/demos/codebase/dw-codebase.jpg)
+
+![Codebase](http://decodize.com/demos/codebase/dw-codebase2.jpg)
 
 Resources 
 ---------
