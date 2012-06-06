@@ -23,7 +23,9 @@ Benefits
 
 How to use
 ----------
-<iframe width="640" height="480" src="http://www.youtube.com/embed/smJaNqtsONA" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/embed/smJaNqtsONA" target="_blank">
+  <img alt="Codebase" src="http://decodize.com/demos/codebase/codebase-youtube.jpg" width="640" height="391" />
+</a>
 
 * Setup server.
 * Add snippet on server.
