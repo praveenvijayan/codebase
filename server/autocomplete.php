@@ -1,16 +1,5 @@
 <?php
-
-include_once('mysqldatabase.php');
-include_once('mysqlresultset.php');
-// get the MySqlDatabase instance
-$db = MySqlDatabase::getInstance();
-try {
-    $conn = $db->connect('localhost', 'root', '', 'db_codebase');
-} 
-catch (Exception $e) {
-    die($e->getMessage());
-}
-
+include_once('config.php');
 if(isset($_REQUEST['q'])){
     $result = $_REQUEST['q'];
 }

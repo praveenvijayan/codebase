@@ -1,0 +1,36 @@
+<!-- MENU-LOCATION=NONE -->
+<html xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
+<head>
+<title>Codebase</title>
+<style type="text/css">
+#msgText {
+	display: none;
+}
+
+#widgetPanel td {
+	padding-top: 4px;
+	white-space: nowrap;
+}
+</style>
+<script language="javascript" src="../Shared/MM/Scripts/CMN/displayHelp.js"></script>
+<script type="text/javascript" src="../Shared/Common/Scripts/ListControlClass.js"></script>
+<script type="text/javascript" src="../Shared/Common/Scripts/dwscripts.js"></script>
+<script type="text/javascript" src="Codebase/Codebase_multiple.js">
+function receiveArguments() {
+		presetSelect(arguments[0], arguments[1], arguments[2]);
+}
+</script>
+</head>
+<body onLoad="initUI();">
+<form>
+<div id="widgetPanel">
+    <table border="0">
+      <tr>
+        <td><label for="widgetList">Select</label></td>
+        <td><select id="codeList" class="namedObjectsList"><option selected="selected"></option></select></td>
+      </tr>
+    </table>
+</div>
+</form>
+</body>
+</html>

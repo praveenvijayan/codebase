@@ -1,13 +1,5 @@
 <?php
-include_once('mysqldatabase.php');
-include_once('mysqlresultset.php');
-$db = MySqlDatabase::getInstance();
-try {
-    $conn = $db->connect('localhost', 'root', '', 'db_codebase');
-} 
-catch (Exception $e) {
-    die($e->getMessage());
-}
+include_once('config.php');
 
 $row = $db->fetchOneRow("SELECT id FROM tbl_codebase ORDER BY id DESC LIMIT 1");
 

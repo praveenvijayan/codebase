@@ -1,14 +1,5 @@
 <?php
-include_once('mysqldatabase.php');
-include_once('mysqlresultset.php');
-// get the MySqlDatabase instance
-$db = MySqlDatabase::getInstance();
-try {
-    $conn = $db->connect('localhost', 'root', '', 'db_codebase');
-} 
-catch (Exception $e) {
-    die($e->getMessage());
-}
+include_once('config.php');
 if(isset($_REQUEST['id'])){
     $id = $_REQUEST['id'];
     $row = $db->fetchOneRow("SELECT fld_title,fld_html, fld_css, fld_js, fld_options FROM tbl_codebase WHERE id='$id' LIMIT 1");

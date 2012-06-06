@@ -27,9 +27,18 @@
               });
               
               $('#search').on('keyup', function(){
-                   clearTimeout( codebaseView.timer ); 
-                   var $this = $(this);
-                   codebaseView.timer = ( $this.val().length >= 3 ) && setTimeout(function() {
+				  clearTimeout( codebaseView.timer ); 
+                  var $this = $(this);
+				  
+				  //If input has no value reset layout
+                   if($this.val().length === 0){
+                        $this.val('');
+						codebaseView.layout();
+                        return;
+                   }
+				  
+                   
+                   	codebaseView.timer = ( $this.val().length >= 3 ) && setTimeout(function() {
                        codebaseView.getSearch($this.val());
                    }, 400);
               });
