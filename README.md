@@ -23,7 +23,7 @@ Benefits
 
 How to use
 ----------
-![Codebase](http://decodize.com/demos/codebase/dw-ext.jpg)
+![http://www.decodize.com/css/codebase-sexy-manage-code-snippets/](http://decodize.com/demos/codebase/codebase-youtube.jpg)
 
 * Setup server.
 * Add snippet on server.
@@ -38,6 +38,8 @@ for css snippets.
 
 ```j:snippet or js:snippet```
 for javascript snippets.
+
+![Codebase](http://decodize.com/demos/codebase/dw-ext.jpg)
 
 ![Codebase](http://decodize.com/demos/codebase/dw-codebase.jpg)
 
