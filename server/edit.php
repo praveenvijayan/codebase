@@ -279,7 +279,9 @@ include_once('config.php');
     </div>  
 
     <div class="container">
-
+<div id="liveView"><iframe id="previewFrame" ></iframe>
+        <h3>Note: Live editing is enabled for simple css editing. Javascript won't work.</h3>
+        </div>
         <div class="name">
 
            <label>Name</label>

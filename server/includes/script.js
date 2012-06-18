@@ -4,7 +4,7 @@
 
     $(function(){
 
-      
+      var delay;
 
       var codebase = window.codebase || {}
 
@@ -304,11 +304,35 @@
 
           setEditors:function(){
 
-             this.Htmleditor = CodeMirror.fromTextArea(document.getElementById("html"), {mode: "text/html", tabMode: "indent", lineNumbers:true});  
+             this.Htmleditor = CodeMirror.fromTextArea(document.getElementById("html"), {
+				 mode: "text/html", 
+				 tabMode: "indent", 
+				 lineNumbers:true,
+				onChange: function() {
+				  clearTimeout(delay);
+				  delay = setTimeout(codebase.livePreview, 300);
+				}
+				 });  
 
-             this.CssEditor = CodeMirror.fromTextArea(document.getElementById("css"), {mode: "css", tabMode: "indent", lineNumbers:true}); 
+             this.CssEditor = CodeMirror.fromTextArea(document.getElementById("css"), {
+				 mode: "css", 
+				 tabMode: "indent", 
+				 lineNumbers:true,
+					onChange: function() {
+					  clearTimeout(delay);
+					  delay = setTimeout(codebase.livePreview, 300);
+					}
+				 }); 
 
-             this.JsEditor = CodeMirror.fromTextArea(document.getElementById("javascript"), {mode: "javascript", tabMode: "indent", lineNumbers:true});  
+             this.JsEditor = CodeMirror.fromTextArea(document.getElementById("javascript"), {
+				 mode: "javascript", 
+				 tabMode: "indent", 
+				 lineNumbers:true,
+					onChange: function() {
+					  clearTimeout(delay);
+					  delay = setTimeout(codebase.livePreview, 300);
+					}
+				 });  
 
           },
 
@@ -438,35 +462,16 @@
 
           },
 
-          preview:function(){
-
-              /*/Get html, css, javascript
-
-                var html =  this.Htmleditor.getValue();
-
-                var css = this.CssEditor.getValue();
-
-                var js = this.JsEditor.getValue();
-
-              //insert Iframe
-
-              ifrm = '<iframe src="about:blank" width="100%" height="100%" id="codePreview" /><a href="#" id="close">x</a>';
-
-              $('#preview-box').html(ifrm);
-
-              //Add html, css and js
-
-              //this.loadOptions();
-
-              this.addHTML(html);
-
-              this.addCSS(css);
-
-              this.addJS(js);
-
-              //show iframe
-
-              this.showPreview();*/
+          livePreview: function () {
+				var html = codebase.Htmleditor.getValue();
+				var css = codebase.CssEditor.getValue();
+				var js = codebase.JsEditor.getValue();
+				html += "<style>"+css+"<style>";
+				var previewFrame = document.getElementById('previewFrame');
+				var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+				preview.open();
+				preview.write(html);
+				preview.close();
 
           },
 
